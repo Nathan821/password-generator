@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Code&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="generator">
+      <h1>Password Generator</h1>
+      <div class="generator-container">
+        <div class="item length">Password length</div>
+        <div class="item right">
+          <input type="number" value="10" min="1" max="100" name="length" id="length">
+        </div>
+        <div class="item">Uppercase letters</div>
+        <div class="item right">
+          <input type="checkbox" name="uppercase" id="uppercase" checked>
+        </div>
+        <div class="item">Lowercase letters</div>
+        <div class="item right">
+          <input type="checkbox" name="lowercase" id="lowercase" checked>
+        </div>
+        <div class="item">Symbols</div>
+        <div class="item right">
+          <input type="checkbox" name="symbols" id="symbols">
+        </div>
+        <div class="item">Numbers</div>
+        <div class="item right">
+          <input type="checkbox" name="numbers" id="numbers" checked>
+        </div>
+        <div class="item generate-btn">
+          <button class="btn">Generate Password</button>
+        </div>
+        <div class="item item-password right">
+          <input type="text" name="password" id="password">
+        </div>
+        <div class="item item-copy">
+          <button class="copy-btn">Copy</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
